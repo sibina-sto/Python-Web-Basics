@@ -1,5 +1,9 @@
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="https://www.youtube.com/watch?v=NrQpajNE4-U.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<object width="425" height="350">
+  <param name="movie" value="https://www.youtube.com/watch?v=NrQpajNE4-U" />
+  <param name="wmode" value="transparent" />
+  <embed src="https://www.youtube.com/watch?v=NrQpajNE4-U"
+         type="application/x-shockwave-flash"
+         wmode="transparent" width="425" height="350" />
+</object>
 
 
