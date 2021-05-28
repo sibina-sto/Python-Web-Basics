@@ -1,3 +1,5 @@
+[![Alt text](https://img.youtube.com/vi/VID/0.jpg)](https://www.youtube.com/watch?v=VID
+
 // ==UserScript==
 // @name        github add youtube
 // @namespace   damien@pobel.fr
@@ -57,5 +59,3 @@ ${value.substring(textarea.selectionEnd)}`;
 
     Array.prototype.forEach.call(document.querySelectorAll('.previewable-comment-form'), enhanceToolbar);
 })();
-
-
