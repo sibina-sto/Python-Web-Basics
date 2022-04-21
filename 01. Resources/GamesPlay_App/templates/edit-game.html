@@ -1,0 +1,20 @@
+{% extends 'home-page.html' %}
+{% block page_content %}
+
+    <!-- edit game section -->
+    <section id="create-page" class="auth">
+        <!-- edit game form -->
+        <form method="POST" id="create">
+            <div class="container">
+                <!-- Edit Game paragraph -->
+                <h1>Edit Game</h1>
+
+                {{ form }}
+                {% csrf_token %}
+                <!-- edit game button -->
+                <input class="btn submit" type="submit" value="Edit Game">
+            </div>
+        </form>
+    </section>
+
+{% endblock %}

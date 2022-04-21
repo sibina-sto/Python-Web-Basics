@@ -1,0 +1,15 @@
+{% extends 'home-page.html' %}
+{% block page_content %}
+    <!-- edit game form -->
+    <section id="delete-page" class="auth">
+        <form method="POST" id="delete">
+            <div class="container">
+
+                <h1>Delete Game</h1>
+                {{ form }}
+                {% csrf_token %}
+                <input class="btn submit" type="submit" value="Delete Game">
+            </div>
+        </form>
+    </section>
+{% endblock %}
