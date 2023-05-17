@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load splitbythree %}
+
+{% block content %}
+
+    <!-- Dashboard Page-->
+    <section id="dashboard-page" class="dashboard">
+        <h1>Dashboard</h1>
+        {% if not books %}
+            <p class="no-books">No books in database!</p>
+        {% else %}
+            {% for book_list in books|splitbythree %}
+                <ul class="my-books-list">
+                {% for book in book_list %}
+                    <li class="myBooks">
+                        <h3>{{ book.title }}</h3>
+                        <p>Type: {{ book.type }}</p>
+                        <p class="img"><img src="{{ book.image }}"
+                                            alt=""></p>
+                        <a class="button" href="{% url 'show book details' book.pk %}">Details</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            {% endfor %}
+        {% endif %}
+    </section>
+
+{% endblock %}
