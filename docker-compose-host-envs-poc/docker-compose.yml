@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      DB_PASS: $DB_PASS
+    env_file:
+      - envs/.env
