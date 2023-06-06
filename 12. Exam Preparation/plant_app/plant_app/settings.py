@@ -19,8 +19,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 MY_APPS = [
-    'myplantapp',
-    'authapp'
+    'plant_app',
+   
 ]
 
 INSTALLED_APPS = [
@@ -30,8 +30,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-] + MY_APPS
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
