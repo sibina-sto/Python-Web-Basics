@@ -58,7 +58,7 @@ DATABASES = {
         "NAME": "plant_app_db",
         "USER": "postgres",
         "PASSWORD": "postgres",
-        "HOST": "127.0.0.1",
+        "HOST": "123456",
         "PORT": "5432",
     }
 }
